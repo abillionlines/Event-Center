@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(169, 169, 169, 0.35);
+}
+header {
+  display: flex;
+  width: 100%;
+  background-color: rgb(169, 169, 193);
+  height: 12vh;
+  max-height: 55px;
+  justify-content: space-between;
+  align-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+logo {
+  display: flex;
+  align-items: center;
+}
+header img {
+  width: 2vw;
+  min-width: 40px;
+  border-radius: 100px;
+  display: flex;
+}
+
+/* nav a {
+  align-content: center; 
+  
+}*/
+
+nav {
+  display: flex;
+  width: 30%;
+  min-width: 230px;
+
+  font-family: outfit;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav li {
+  text-align: center;
+  list-style: none;
+}
+
+.hero {
+  display: flex;
+  height: 150vh;
+  background-image: url(/assets/bell-tower.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+
+  background-color: rgb(169, 169, 169);
+}
+.hero img {
+  object-fit: cover;
+}
+
+.title {
+  padding-top: 40px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+.title-overlay {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10vh;
+  align-items: center;
+  justify-content: center top;
+  justify-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 50%;
+  min-width: 330px;
+  height: 75%;
+  gap: 12%;
+}
+div.btn {
+  justify-items: center;
+  align-content: center;
+}
+
+.title p {
+  display: flex;
+
+  width: 40vw;
+  min-width: 230px;
+}
+
+h1 {
+  font-family: museomoderno;
+  color: white;
+  font-size: clamp(1rem, 3vw, 4rem);
+  font-weight: 350;
+  letter-spacing: 2px;
+}
+
+h1 span {
+  font-family: outfit;
+  font-weight: bolder;
+  font-style: italic;
+  text-wrap: nowrap;
+}
+
+p {
+  font-family: museomoderno;
+  color: white;
+}
+
+button {
+  display: flex;
+  width: 15vw;
+  min-width: 120px;
+  height: 8vh;
+  min-height: 30px;
+  background-color: rgb(255, 255, 255, 0.4);
+  border-radius: 25px;
+
+  justify-content: center;
+  align-content: center;
+  text-wrap: nowrap;
+  padding: 10px 5px 10px 5px;
+  /* padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;*/
+}
+
+button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: museomoderno;
+  font-size: clamp(1rem, 2vw, 3rem);
+  color: black;
+}
+
+.home-video {
+  position: relative; /* THIS IS USUALLY THE MISSING PIECE */
+  width: 100%;
+  height: 100vh; /* Or whatever height you want */
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.video-box {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.video-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+
+.video-text h2 {
+  font-family: outfit;
+  font-weight: 200;
+  color: white;
+  font-size: clamp(2rem, 4vw, 6rem);
+  position: absolute;
+  text-align: center;
+  z-index: 3;
+}
+
+.video-text h2 span {
+  color: red;
+}
+
+.test-box-all {
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  gap: 12%;
+  flex-wrap: wrap;
+}
+.test-box {
+  width: 20vw;
+
+  padding: 3%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  justify-items: center;
+  padding-bottom: 7%;
+  align-content: center;
+  position: relative;
+}
+.BTT-button {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  height: 6vh;
+}
+
+.BTT-button a {
+  text-decoration: none;
+
+  font-family: museomoderno;
+  font-size: clamp(1rem, 2vw, 3rem);
+  color: black;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  background-color: rgb(169, 169, 193);
+  height: 12vh;
+  max-height: 55px;
+  justify-content: space-between;
+  align-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+footer img {
+  width: 2vw;
+  min-width: 40px;
+  border-radius: 100px;
+}
+
+footer a {
+  align-content: center;
+}
+
+.test-box h3 {
+  position: absolute;
+  bottom: 5%;
+  font-style: italic;
+}
+
+div.test-box p {
+  font-size: clamp(0.7rem, 1.3vw, 1.5rem);
+}
+
+h3 {
+  font-family: outfit;
+  font-size: clamp(0.85rem, 1.8vw, 2.5rem);
+}
+
+@media only screen and (max-width: 1024px) {
+  .test-box-all {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: space-around;
+    gap: 35px;
+  }
+  .test-box {
+    width: 60vw;
+  }
+
+  .test-box h3 {
+    bottom: 5%;
+  }
+}
