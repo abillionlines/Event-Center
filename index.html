@@ -3,21 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <header class="stuck">
+    <header class="stuck" id="sticky">
       <logo>
         <a href="#"><img src="/assets/Temple Bell Logo.png" /></a>
       </logo>
-      <nav>
+      <nav id="menu">
         <ul class="navigation">
           <li a href="index.html">Home</li>
           <li a href="about.html">About</li>
           <li a href="events.html">Events</li>
         </ul>
       </nav>
+      <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
     </header>
     <section class="hero">
       <div class="title">
@@ -53,7 +61,6 @@
         </div>
       </div>
     </section>
-
     <section class="testimonials">
       <div class="test-box-all">
         <div class="test-box">
@@ -63,7 +70,7 @@
             labore distinctio iusto? Mollitia quia accusantium nam sit eligendi
             labore porro numquam?
           </p>
-          <h3>~Attendee</h3>
+          <div class="test-person"><h3>~Attendee~</h3></div>
         </div>
         <div class="test-box">
           <p>
@@ -72,7 +79,7 @@
             facere perspiciatis saepe magni facilis ipsum. Id praesentium
             reiciendis facere perferendis sit.
           </p>
-          <h3>~Planner</h3>
+          <div class="test-person"><h3>~Planner~</h3></div>
         </div>
         <div class="test-box">
           <p>
@@ -81,13 +88,14 @@
             laudantium reiciendis laboriosam. Minima illum mollitia nobis,
             itaque fugiat facere quos sed voluptates?
           </p>
-          <h3>~Staff</h3>
+          <div class="test-person"><h3>~Staff~</h3></div>
         </div>
       </div>
       <div class="BTT-button">
-        <button><a href="#">BACK TO TOP</a></button>
+        <button><a href="#sticky">BACK TO TOP</a></button>
       </div>
     </section>
+
     <footer>
       <logo>
         <a href="#"><img src="/assets/Temple Bell Logo.png" /></a>
@@ -100,5 +108,11 @@
         </ul>
       </nav>
     </footer>
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById("menu");
+        nav.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
