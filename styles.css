@@ -334,7 +334,7 @@ h3 {
     gap: 5px;
   }
   nav li {
-    background-color: rgb(31, 37, 151);
+    background-color: rgba(19, 28, 196, 0.95);
     color: white;
     font-size: 25px;
     width: 100vw;
