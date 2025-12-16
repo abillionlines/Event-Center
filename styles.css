@@ -55,6 +55,17 @@ nav li {
   text-align: center;
   list-style: none;
 }
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: all 1s;
+}
+
+nav ul li a:hover {
+  color: whitesmoke;
+  transition: 1s all;
+}
 .menu-toggle {
   font-size: 35px;
   display: none;
@@ -109,6 +120,27 @@ div.btn {
   min-width: 230px;
 }
 
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 75%;
+  font-family: outfit;
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+  font-size: clamp(0.6rem, 1.5vw, 3rem);
+  color: rgb(189, 189, 189);
+}
+
+tr {
+}
+
 h1 {
   font-family: museomoderno;
   color: white;
@@ -129,11 +161,17 @@ p {
   color: white;
 }
 
+h4 {
+  justify-self: center;
+  margin: 7%;
+  font-size: clamp(1rem, 2.5vw, 3.5rem);
+}
+
 button {
   display: flex;
   width: 15vw;
   min-width: 120px;
-  height: 8vh;
+  height: 6vh;
   min-height: 30px;
   background-color: rgb(255, 255, 255, 0.4);
   border-radius: 25px;
@@ -261,6 +299,35 @@ video {
   font-family: museomoderno;
   font-size: clamp(1rem, 2vw, 3rem);
   color: black;
+}
+form {
+  width: 50%;
+  display: grid;
+  margin: 40px auto;
+  font-family: outfit;
+  gap: 10px;
+}
+
+input,
+textarea {
+  border-radius: 10px;
+  padding: 10px;
+  border-width: 1.5px;
+}
+
+.contactinput {
+  margin-top: 2%;
+}
+
+.submitbtn {
+  padding: 0;
+  text-align: center;
+  height: 5vh;
+  align-items: center;
+  justify-items: center;
+  font-size: clamp(0.8rem, 1.4vw, 1.8rem);
+
+  border-width: 1.5px;
 }
 
 footer {

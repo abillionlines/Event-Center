@@ -20,9 +20,9 @@
       </logo>
       <nav id="menu">
         <ul class="navigation">
-          <li a href="index.html">Home</li>
-          <li a href="about.html">About</li>
-          <li a href="events.html">Events</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
         </ul>
       </nav>
       <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
@@ -42,6 +42,25 @@
               <a href="#">let's chat</a>
             </button>
           </div>
+          <table>
+            <caption>
+              <h4>General Booking Availability</h4>
+            </caption>
+            <thead>
+              <th>January</th>
+              <th>February</th>
+              <th>March</th>
+              <th>April</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>No Availability</td>
+                <td>No Availability</td>
+                <td>11 openings</td>
+                <td>9 openings</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
@@ -95,16 +114,37 @@
         <button><a href="#sticky">BACK TO TOP</a></button>
       </div>
     </section>
-
+    <form method="post">
+      <div>
+        <label for="Name">Name:</label>
+        <input class="contactinput" type="text" placeholder="Your Name" />
+      </div>
+      <div>
+        <label for="Email">Email:</label>
+        <input
+          class="contactinput"
+          type="Name"
+          placeholder="jane.doe@gmail.com"
+        />
+      </div>
+      <div>
+        <label for="subject">Subject:</label>
+        <textarea
+          class="contactinput"
+          placeholder="Let us know what your needs are..."
+        ></textarea>
+      </div>
+      <button class="submitbtn" type="submit">Send Message</button>
+    </form>
     <footer>
       <logo>
         <a href="#"><img src="/assets/Temple Bell Logo.png" /></a>
       </logo>
       <nav>
         <ul class="navigation">
-          <li a href="index.html">Home</li>
-          <li a href="about.html">About</li>
-          <li a href="events.html">Events</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
         </ul>
       </nav>
     </footer>
