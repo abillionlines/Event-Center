@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -14,12 +19,12 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="stuck" id="sticky">
-      <logo>
+    <header id="sticky">
+      <div class="headerlogo">
         <a href="#"
           ><img src="/assets/Temple Bell Logo.png" alt="temple bell logo"
         /></a>
-      </logo>
+      </div>
       <nav id="menu">
         <ul class="navigation">
           <li><a href="index.html">Home</a></li>
@@ -43,8 +48,8 @@
             quidem nisi cumque error.
           </p>
           <div class="btn">
-            <button>
-              <a href="#">let's chat</a>
+            <button class="navbtns">
+              <a href="#contact">let's chat</a>
             </button>
           </div>
 
@@ -120,35 +125,46 @@
         </div>
       </div>
       <div class="BTT-button">
-        <button><a href="#sticky">BACK TO TOP</a></button>
+        <button class="navbtns"><a href="#sticky">BACK TO TOP</a></button>
       </div>
     </section>
-    <form method="post">
-      <div>
-        <label for="Name">Name:</label>
-        <input class="contactinput" type="text" placeholder="Your Name" />
-      </div>
-      <div>
-        <label for="Email">Email:</label>
-        <input
-          class="contactinput"
-          type="Name"
-          placeholder="jane.doe@gmail.com"
-        />
-      </div>
-      <div>
-        <label for="subject">Subject:</label>
-        <textarea
-          class="contactinput"
-          placeholder="Let us know what your needs are..."
-        ></textarea>
-      </div>
+    <form method="post" id="contact">
+      <label for="Name">Name:</label>
+      <input class="contactinput" type="text" placeholder="Your Name" />
+
+      <label for="Email">Email:</label>
+      <input
+        class="contactinput"
+        type="Name"
+        placeholder="jane.doe@gmail.com"
+      />
+
+      <label for="subject">Subject:</label>
+      <textarea
+        class="contactinput"
+        placeholder="Let us know what your needs are..."
+      ></textarea>
+
       <button class="submitbtn" type="submit">Send Message</button>
     </form>
     <footer>
-      <logo>
+      <div class="footerlogo">
         <a href="#"><img src="/assets/Temple Bell Logo.png" /></a>
-      </logo>
+      </div>
+      <div class="social">
+        <div class="icons">
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
+          <a href="https://www.instagram.com"
+            ><i class="bx bxl-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="bx bxl-facebook-circle"></i>
+          </a>
+        </div>
+      </div>
+
       <nav>
         <ul class="navigation">
           <li><a href="index.html">Home</a></li>
