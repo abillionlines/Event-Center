@@ -6,6 +6,10 @@ This was a tough one. I had to rebuild it a few times, made some really newbie m
 
 I tried to use flex to a point where it would look good on literally any screen size, whether vertical or horizontal. I really don't know if this is a good practice or not.
 
+## Setup Instructions
+
+All images are in the assets folder. You can download the entire project folder from github and drop it into vs code and everything should be working.
+
 ## AI Usage Disclosure
 
 no copy and paste from AI was used, although I got answers to a lot of my questions through a few different AI platforms to make this one work.
